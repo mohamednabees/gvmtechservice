@@ -1,2 +1,2 @@
 # gvmtechservice
-Exploring knowledge AV Devices
+Exploring AV knowledge
