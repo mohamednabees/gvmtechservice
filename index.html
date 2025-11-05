@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GVM Tech & Service</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800 p-10">
+    <header class="flex justify-between items-center mb-10 max-w-5xl mx-auto">
+      <div class="flex items-center space-x-3">
+        <img src="logo.png" alt="GVM Logo" class="w-10 h-10 rounded-full" />
+        <div>
+          <div class="text-2xl font-bold">GVM Tech & Service</div>
+          <p class="text-sm text-gray-500">Tech & Service</p>
+        </div>
+      </div>
+      <nav class="flex space-x-6 text-gray-700 font-medium">
+        <button onclick="showPage('home')" class="hover:text-gray-900 transition-colors underline underline-offset-8">Home</button>
+        <button onclick="showPage('products')" class="hover:text-gray-900 transition-colors">Products</button>
+        <button onclick="showPage('about')" class="hover:text-gray-900 transition-colors">About</button>
+        <button onclick="showPage('contact')" class="hover:text-gray-900 transition-colors">Contact</button>
+      </nav>
+    </header>
+
+    <main id="content" class="text-center mt-10"></main>
+
+    <div id="popup" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+      <div class="bg-white rounded-2xl shadow-lg p-8 max-w-lg w-full">
+        <h2 id="popupTitle" class="text-2xl font-bold mb-4"></h2>
+        <ul id="popupList" class="space-y-3 text-left"></ul>
+        <button onclick="closePopup()" class="mt-6 w-full bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-700">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
